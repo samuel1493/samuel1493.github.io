@@ -1,0 +1,199 @@
+Estructura básica HTML:
+
+<!DOCTYPE html>
+<html>
+	<head>
+
+	</head>
+	<body>
+
+
+	</body>
+</html>
+
+
+
+Título de una página: dentro de <head> usamos la etiqueta  <title> de la siguiente forma:
+
+
+<head>
+		<title>Esto es el título</title>
+</head>
+
+
+
+Usar css en un documento HTML: Dentro de <head> usamos la etiqueta <link> de la siguiente manera:
+
+<head>
+		<title>Esto es el título</title>
+		<link  rel="stylesheet"  href="estilazo.css"> <!--estilazo.css es el nombre del css-->
+</head>
+
+
+Etiquetas comunes que van dentro de <body>
+
+
+<p></p> <!--Esto es un párrafo-->
+
+<h1></h1> <!--Esto es un encabezado de primer nivel-->
+
+<h2></h2> <!--Esto es un encabezado de segundo nivel-->
+
+<h3></h3> <!--Esto es un encabezado de tercer nivel, los demás serían igual: <h4>, </h4><h5>, etc....-->
+
+<br/> <!--Esto es un salto de línea-->
+
+<a href = "MiPagina.html"></a> <!--Esto es un enlace a otra página html-->
+
+
+
+Etiquetas para trabajar con multimedia: imágenes, vídeos y audios (todas dentro de <body>)
+
+
+<!-- IMAGEN: -->
+
+<img src="hola.png" alt="ufw" width="250" height="150"> 
+
+<!--Lo de arriba es para usar una imagen, donde src es la ruta y el nombre de la imagen, alt es el texto alternativo para cuando no se carga la imagen y width y height son el largo y ancho de la imagen en pixeles-->
+
+<!-- VIDEO: -->
+
+<video width="320" height="240" controls>
+      <source src="pelicula.mp4" type="video/mp4">
+</video>
+
+<!--La etiqueta <video> sirve para usar un video. width y height son el largo y ancho del video. Controls sirve para que aparezcan los botones de play, pause y stop.-->
+
+<!-- La etiqueta <source> que va dentro de <video> sirve para definir cual es el video que queremos mostrar. src es la ruta y el nombre del video y type es para decir que tipo de video es -->
+
+<!-- AUDIO: -->
+
+<audio controls>
+      <source src="musica.mp3" type="audio/mpeg">
+</audio>
+
+<!--La etiqueta <audio> sirve para usar un AUDIO. Controls sirve para que aparezcan los botones de play, pause y stop.-->
+
+<!-- La etiqueta <source> que va dentro de <audio> sirve para definir cual es el AUDIO que queremos escuchar. src es la ruta y el nombre del AUDIO y type es para decir que tipo de AUDIO es -->
+
+
+
+Listas en html (todo va dentro de <body>)
+
+<!-- EJEMPLO DE LISTA ORDENADA-->
+
+<ol>
+	<li>Samuel</li>
+    <li>Alonso</li>
+    <li>Hamilton</li>
+	
+</ol>
+
+<!--<ol> es para definir una lista ordenada y <li> es cada elemento de la lista-->
+
+<!-- EJMPLO DE LISTA DESORDENADA-->
+
+<ul>
+	<li>Samuel</li>
+    <li>Alonso</li>
+    <li>Hamilton</li>
+	
+</ul>
+
+<!--<ul> es para definir una lista desordenada y <li> es cada elemento de la lista-->
+
+Tablas en html:
+
+<!-- EJMPLO DE TABLA-->
+
+<table border="1" cellspacing="20" cellpadding="20">
+	<caption>Lugares de inter&eacute;s</caption>
+	<tr>
+		<th>Nombre del lugar</th>
+		<th>Direcci&oacute;n</th>
+	</tr>
+	<tr>
+		<td>Dinoseto</td>
+		<td>Praza da Princesa, 1</td>
+	</tr>
+	<tr>
+		<td>El Castro</td>
+		<td>Paseo Cronista Xos&eacute; M. &Aacute;lvarez Bl&aacute;zquez, 16,</td>
+	</tr>
+</table>
+
+<!--La etiqueta <table></table> es para crear una tabla. cellspacing es para especifica el espacio entre las celdas.-->
+<!--Sus atributos son:-->
+<!--Border:definir el tamaño del borde.-->
+<!--cellspacing: especificar el espacio entre las celdas.-->
+<!--cellpadding: especificar el espacio del texto con el borde de la celda-->
+
+<!--<caption></caption> es para definir el titulo de la tabla-->
+<!--<tr></tr> es para definir una fila de una tabla-->
+<!--<th></th> es para definir las celdas de encabezado-->
+<!--<td></td> es para definir las celdas o columnas-->
+
+Formularios en html:
+
+<!-- EJMPLO DE FORMULARIO-->
+
+<form>
+			<h1>Bienvenido</h1>
+			</br>
+			<label for="INPUT1">Introduce tu nombre:</label>
+			<input type="text" id="INPUT1"/>
+			
+			</br>
+			</br>
+			<!-- Esto sirve para hacer un radio button-->
+			<p>Selecciona el color de tu icono:</p>
+			<input type="radio" id="INPUT3"/>
+			<label for="INPUT3">Rojo</label>
+			</br>
+			<input type="radio" id="INPUT4"/>
+			<label for="INPUT4">Verde</label>
+			</br>
+			<input type="radio" id="INPUT5"/>
+			<label for="INPUT5">Azul</label>
+			
+			</br>
+			</br>
+			<!-- Esto sirve para hacer casillas de verificación-->
+			<p>Selecciona los d&iacute;as con disponibilidad:</p>
+			<input type="checkbox" id="INPUT6"/>
+			<label for="INPUT6">Lunes</label>
+			</br>
+			<input type="checkbox" id="INPUT7"/>
+			<label for="INPUT7">Martes</label>
+			</br>
+			<input type="checkbox" id="INPUT8"/>
+			<label for="INPUT8">Mi&eacute;rcoles</label>
+			</br>
+			<input type="checkbox" id="INPUT9"/>
+			<label for="INPUT9">Jueves</label>
+			</br>
+			<input type="checkbox" id="INPUT10"/>
+			<label for="INPUT10">Viernes</label>
+			</br>
+			
+			</br>
+			<input type="submit" value="Haz click para enviar la informaci&oacute;n"/>
+</form>
+
+<!--<form></form> sirve para definir el formulario-->
+
+<!--<label></label> sirve para definir una etiqueta o texto de un <input> o cuadro de texto-->
+<!--El atributo for de <label> es para indicar a que <input> o cuadro de texto pertenece la <label>-->
+
+<!--<input></input> sirve para definir una caja de texto-->
+<!--El atributo type de <input></input> sirve para definir que tipo de input es. Puede ser tipo: -->
+<!--text = caja de texto. -->
+<!--radio = botón de selección redondo-->
+<!--checkbox = casilla de vericación-->
+<!--submit = botón-->
+<!--El atributo id de <input></input> es el identificador de ese cuadro de texto para distinguirlo de los demás-->
+
+<!--El atributo value es para definir el texto del botón-->
+
+
+CSS:
