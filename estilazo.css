@@ -1,0 +1,43 @@
+
+body{
+	
+	}
+	
+h1 {
+	font-family: 'impact';
+	text-align: center;
+	color: #550000; 
+	 
+	}
+
+	
+h2 {
+	text-align: right;}
+	
+.vigo {
+	font-family: 'Helvetica';
+	}
+.goian {
+	font-family: 'impact';
+	}
+	
+a:link {
+	color: #FFF380; 
+	   }
+	
+a:visited {
+	color: #FFCAD5; }
+span {
+
+color:pink;
+
+}
+div{
+	background-color:black;color:white;padding:20px;
+	
+}
+div {
+	text-align: center;
+	background-color:red;
+	text-decoration:overline;
+	border:5px,
